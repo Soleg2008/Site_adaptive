@@ -13,3 +13,11 @@ body {
 	display: table;
 	clear: both;
 }
+
+.upper {
+	text-transform: uppercase;
+}
+
+.strike {
+	text-decoration: line-through;
+}
