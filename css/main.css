@@ -1,5 +1,6 @@
 .sender {
     padding: 15px;
+    margin: 0 auto;
     background: #fff;
     font-size: 10px;
 }
@@ -49,10 +50,61 @@
     float: right;
 }
 
+/*Slider*/
+.ban1 {
+    background: url(../images/baner.jpg)  left 40% top / cover no-repeat;
+   }
+
+.ban2 {
+    background: url(../images/baner1.jpg) left 30% top / cover no-repeat;
+   }
+
+.dot li button {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  vertical-align: middle;
+  text-decoration: none;
+  border: 0px;
+  border-radius: 50%;
+  background: #6c6c69;
+  font-size: 0px;
+  outline: 0;
+ }
+
+ .dot li {
+    margin-right: 10px;
+ }
+
+ .dot li:last-child {
+    margin-right: 0px;
+ }
+
+ .dot .slick-active button { /*активная точка*/
+   background: #000;
+ }
+
+  .dot li {
+    list-style: none;
+    display: inline-block;
+  }
+
+  .dot {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 24px;
+    z-index: 200;
+    width: 34px;
+    margin: 0 auto;
+  }
+  
+/*end Slider*/
+
 .baner {
-    height: 100vh;
-    background: gray url(../images/baner.jpg) no-repeat center center/cover;
+    height: 300px;
 }
+
 
 .new {
     padding: 25px 0;
@@ -170,6 +222,7 @@ footer {
 }
 
 .container {
+    position: relative;
     min-width: 320px;
     margin: 0 auto;
 }
@@ -226,6 +279,11 @@ footer {
     .sender {
         font-size: 14px;
     }
+
+    .baner {
+    height: 390px;
+}
+
 
     .thumb_main {
         margin-bottom: 50px;
@@ -479,7 +537,7 @@ footer {
     @media screen and (min-width: 1170px) {
 
         .container {
-            min-width: 1170px;
+            width: 1170px;
             margin: 0 auto;
         }
 

@@ -21,3 +21,8 @@ body {
 .strike {
 	text-decoration: line-through;
 }
+
+ul {
+	margin: 0;
+	padding: 0;
+}
