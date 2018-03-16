@@ -51,13 +51,6 @@
 }
 
 /*Slider*/
-.ban1 {
-    background: url(../images/baner.jpg)  left 40% top / cover no-repeat;
-   }
-
-.ban2 {
-    background: url(../images/baner1.jpg) left 30% top / cover no-repeat;
-   }
 
 .dot li button {
   display: inline-block;
@@ -102,7 +95,9 @@
 /*end Slider*/
 
 .baner {
-    height: 300px;
+  /*  object-fit: cover;*/
+    height: auto;
+    width: 100%;
 }
 
 
@@ -113,9 +108,8 @@
 }
 
 .th1 {
-    background-image: url(../images/th1.jpg);
-    background-size: cover;
-    background-position: center center;
+    width: 100%;
+    height: auto;
 }
 
 .th {
@@ -196,13 +190,14 @@
     width: 213px;
     border: 1px solid #b0ac9c;
     margin: 0 auto;
-    margin-bottom: 20px;
     color: #b0ac9c;
     font-size: 18px;
     text-align: center;
     padding: 10px;
 }
-
+.cnt {
+    margin-bottom: 40px;
+}
 .footer_ul {
     margin: 0;
     padding: 0;
@@ -275,22 +270,21 @@ footer {
         min-width: 480px;
         margin: 0 auto;
     }
+    .slider_item {
+        width: 480px;
+    }
 
     .sender {
         font-size: 14px;
     }
 
-    .baner {
-    height: 390px;
-}
-
-
+   
     .thumb_main {
         margin-bottom: 50px;
         line-height: 1.7;
     }
 
-    .th1 {
+    .th {
         width: 370px;
         height: 480px;
         margin-bottom: 32px;
@@ -371,6 +365,11 @@ footer {
         margin: 0 auto;
     }
 
+    .slider_item {
+        width: 750px;
+    }
+
+
     .thumb {
         text-align: center;
     }
@@ -396,11 +395,13 @@ footer {
     }
 
     .th2 {
-        background-image: url(../images/th2.jpg);
+         width: 100%;
+        height: auto;
     }
 
     .th3 {
-        background-image: url(../images/th3.jpg);
+         width: 100%;
+        height: auto;
     }
 
     .thumb .thumb_main:nth-child(2) {
@@ -409,10 +410,6 @@ footer {
 
     .thumb .thumb_main:nth-child(3) {
         display: inline-block;
-    }
-
-    .button {
-        margin-bottom: 40px;
     }
 
     .sale__img {
@@ -469,6 +466,11 @@ footer {
         min-width: 970px;
         margin: 0 auto;
     }
+
+    .slider_item {
+        width: 970px;
+    }
+
 
     .send {
         width: 25%;
