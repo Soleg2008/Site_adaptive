@@ -350,19 +350,20 @@
 
 .flex_container {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.flex_container_left {
+    display: flex;
+    flex: 0 0 45%;
+    min-width: 45%;
     flex-direction: column;
-    position: relative;
 }
 
-.flex_container_item {
-    max-width: 50%;
-}
-
-.flex_container_item:last-child {
-    position: absolute;
-    top: 7px;
-    right: 0;
-    max-width: 150px;
+.flex_container_right {
+    flex: 0 0 55%;
+    min-width: 55%;
 }
 
 .footer_inner {
@@ -457,17 +458,28 @@
     }
 
     .footer_inner {
-        width: 374px;
+        width: 77%;
         margin: 0 auto;
     }
 
+    .flex_container_left {
+        flex: 0 0 50%;
+        min-width: 50%;
+
+    }
+
+    .flex_container_right {
+        flex: 0 0 50%;
+        min-width: 50%;
+    }
+
     .footer_button {
+        margin-left: auto;
         padding-top: 12px;
         padding-bottom: 12px;
         border: 1px solid;
         width: 172px;
         text-align: center;
-        float: right;
         text-transform: uppercase;
     }
 
@@ -587,17 +599,17 @@
         width: 33.3%;
         padding: 0px 10px;
         margin: 0;
-
         line-height: 2;
         display: inline-block;
         vertical-align: top;
+
     }
 
     .thumb .thumb_main:nth-child(2) {
         display: inline-block;
     }
 
-    .thumb .thumb_main:nth-child(3) {
+    .thumb .thumb_main:last-child {
         display: inline-block;
     }
 
@@ -615,14 +627,16 @@
         padding-bottom: 28px;
     }
 
-    .flex_container {
+    .flex_container_left {
+        flex: 0 0 65%;
+        min-width: 65%;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .flex_container_item:last-child {
-        position: static;
-
+    .flex_container_right {
+        flex: 0 0 35%;
+        min-width: 35%;
     }
 
     .footer_inner {
@@ -703,6 +717,17 @@
         margin-bottom: 19px;
     }
 
+    .flex_container_left {
+        flex: 0 0 67%;
+        min-width: 67%;
+
+    }
+
+    .flex_container_right {
+        flex: 0 0 33%;
+        min-width: 33%;
+    }
+
 }
 
 /*1170*/
@@ -752,24 +777,20 @@
         padding-bottom: 28px;
     }
 
-    .flex_container {
-        justify-content: flex-start;
-    }
-
-    .flex_container_item {
-        min-width: 20%
-    }
-
-    .flex_container_item:last-child {
-        position: absolute;
-        right: 0;
-        top: 0;
-
-    }
-
     .footer_inner {
         width: 80%;
         margin: 0 auto;
+    }
+
+    .flex_container_left {
+        flex: 0 0 56%;
+        min-width: 56%;
+
+    }
+
+    .flex_container_right {
+        flex: 0 0 44%;
+        min-width: 44%;
     }
 }
 
